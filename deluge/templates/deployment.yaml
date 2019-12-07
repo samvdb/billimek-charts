@@ -37,12 +37,12 @@ spec:
             httpGet:
               port: http
               scheme: HTTP
-              initialDelaySeconds: 30
+            initialDelaySeconds: 30
           readinessProbe:
             httpGet:
               port: http
               scheme: HTTP
-              initialDelaySeconds: 15
+            initialDelaySeconds: 15
           env:
             - name: TZ
               value: "{{ .Values.timezone }}"
